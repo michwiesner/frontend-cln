@@ -30,13 +30,14 @@
 }
 
 .search-button:hover {
-  background-color: #0e5acf;
+  background-color: #0f62df;
   transition: all 1s ease;
 }
 
 @media only screen and (min-width: 768px) {
   .search-input {
-    border: 0.0625rem solid #97999d;
+    background-color: transparent;
+    border: 0.0625rem solid #6b6c6e;
     padding: 0.625rem 0.75rem 0.625rem 0.75rem;
   }
 }

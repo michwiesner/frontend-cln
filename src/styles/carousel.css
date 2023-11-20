@@ -30,7 +30,11 @@
   border-radius: 1rem;
   border: 0.0625rem solid #e6e6e6;
   max-width: 15.625rem;
-  padding-bottom: 0.938rem;
+  
+}
+
+.carousel-card > img {
+  border-radius: 1rem 1rem 0 0;
 }
 
 .carousel-card > a > img {
@@ -38,8 +42,10 @@
 }
 
 .carousel-card-content {
+  border-radius: 0 0 1rem 1rem;
   padding: 0.625rem 0.938rem;
   gap: 0.938rem;
+  padding-bottom: 0.938rem;
 }
 
 .carousel-card-content > a {
@@ -48,9 +54,26 @@
 }
 
 .promocode-button {
+  background-color: transparent;
   width: 70%;
   border-radius: 0.625rem;
+  color: var(--bg-white);
+  border: 0.0625rem solid var(--bg-white);
   padding: 0.625rem 0.313rem;
+}
+
+.promocode-button:hover {
+  background-color: #0f62df;
+  transition: all 1s ease;
+}
+
+.bg-blue {
+  background-color: var(--blue-ln);
+  color: var(--bg-white);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
 }
 
 @media only screen and (min-width: 768px) {

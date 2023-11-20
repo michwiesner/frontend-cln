@@ -14,8 +14,8 @@ const CarouselCard = ({
   branches,
   promoCode,
 }: IAccountCarousel) => (
-  <div className="carousel-card col-6 col-md-3">
-    <Link href={`${urlNavigation}/${crmid}`} target="_blank">
+  <div className="carousel-card d-flex flex-column col-6 col-md-3">
+    {promoCode ? (
       <Image
         src={images[0].url}
         width={194}
@@ -23,15 +23,29 @@ const CarouselCard = ({
         className="w-100"
         alt="card-image"
       />
-    </Link>
-    <div className="d-flex flex-column carousel-card-content">
+    ) : (
       <Link href={`${urlNavigation}/${crmid}`} target="_blank">
-        <p className="f-s-16 pointer">{name}</p>
+        <Image
+          src={images[0].url}
+          width={194}
+          height={194}
+          className="w-100"
+          alt="card-image"
+        />
       </Link>
+    )}
+    <div className={`d-flex flex-column carousel-card-content ${promoCode ? "bg-blue": "bg-white"}`}>
+      {promoCode ? (
+        <p className="f-s-16">{name}</p>
+      ) : (
+        <Link href={`${urlNavigation}/${crmid}`} target="_blank">
+          <p className="f-s-16 pointer">{name}</p>
+        </Link>
+      )}
       {benefits && benefits?.length > 0 && (
         <div className="d-flex">
           {benefits.map(({ type }, index: number) => (
-            <p key={index} className={index > 0 ? "m-l-15" : ""}>
+            <p key={index} className={index > 0 ? "f-w-700 m-l-15" : "f-w-700"}>
               {type}
             </p>
           ))}

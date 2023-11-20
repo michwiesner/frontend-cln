@@ -1,0 +1,48 @@
+.header-container {
+  z-index: 2;
+  position: fixed;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+
+.header-white {
+  background: var(--bg-white);
+}
+
+.header-transparent {
+  background: rgba(254, 254, 254, 0.1);
+}
+
+.search-input#searchByName {
+  border-radius: 1.25rem 0 0 1.25rem;
+}
+
+.search-input#searchByLocation {
+  border-radius: 0 1.25rem 1.25rem 0;
+}
+
+.search-button {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--blue-ln);
+  color: #ffffff;
+  padding: 0.75rem;
+}
+
+.search-button:hover {
+  background-color: #0e5acf;
+  transition: all 1s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-input {
+    border: 0.0625rem solid #97999d;
+    padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .search-input {
+    padding: 0.625rem 8rem 0.625rem 1.5rem;
+  }
+}

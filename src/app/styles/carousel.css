@@ -1,0 +1,79 @@
+.tourism-container {
+  padding: 1.563rem 1.25rem;
+  background-color: var(--bg-white);
+}
+
+.benefits-container {
+  padding: 1.563rem 1.25rem;
+  background-color: #f1f1f1;
+}
+
+.title-container {
+  padding: 1.25rem 0;
+}
+
+.generic-button {
+  border: 0.0625rem solid var(--blue-ln);
+  background-color: transparent;
+  color: var(--blue-ln);
+  border-radius: 1.875rem;
+  padding: 5px 5px;
+  font-size: 10px;
+}
+
+.carousel-container {
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.carousel-card {
+  border-radius: 1rem;
+  border: 0.0625rem solid #e6e6e6;
+  max-width: 15.625rem;
+  padding-bottom: 0.938rem;
+}
+
+.carousel-card > a > img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.carousel-card-content {
+  padding: 0.625rem 0.938rem;
+  gap: 0.938rem;
+}
+
+.carousel-card-content > a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.promocode-button {
+  width: 70%;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0.313rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .tourism-container {
+    padding: 2.125rem 2.375rem;
+  }
+  .benefits-container {
+    padding: 2.125rem 2.375rem;
+  }
+  .generic-button {
+    padding: 0.938rem 0.625rem;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tourism-container {
+    padding: 3.125rem 9.375rem;
+  }
+  .benefits-container {
+    padding: 3.125rem 9.375rem;
+  }
+  .generic-button {
+    padding: 0.938rem 0.625rem;
+  }
+}

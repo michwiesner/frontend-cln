@@ -1,0 +1,39 @@
+/* Next & previous buttons */
+.prev,
+.next {
+  position: absolute;
+  padding: 0.063rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15px;
+}
+
+.hero-container {
+  min-height: 50vh;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .prev,
+  .next {
+    padding: 0.3rem;
+  }
+  .next {
+    right: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .prev,
+  .next {
+    padding: 1rem;
+  }
+  .next {
+    right: 20px;
+  }
+  .hero-container {
+    min-height: 80vh;
+  }
+}

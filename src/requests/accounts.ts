@@ -1,4 +1,4 @@
-import { IAccount } from "@/app/interfacesAndTypes/accounts";
+import { IAccount } from "@/interfacesAndTypes/accounts";
 
 export const getAccounts = (
   type: string,

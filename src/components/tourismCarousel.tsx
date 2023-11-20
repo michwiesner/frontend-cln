@@ -1,7 +1,7 @@
-import { getAccounts } from "../requests/accounts";
+import { getAccounts } from "@/requests/accounts";
 import Carousel from "./carousel";
 import GenericButton from "./genericButton";
-import "@/app/styles/carousel.css";
+import "@/styles/carousel.css";
 
 const TourismCarousel = async () => {
   const accounts = await getAccounts("tourism");

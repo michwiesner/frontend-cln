@@ -1,11 +1,8 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import searchIcon from "@/../public/icons/search.svg";
-import favoritesIcon from "@/../public/icons/favorite.svg";
-import notificationsIcon from "@/../public/icons/notifications.svg";
-import faceIcon from "@/../public/icons/face.svg";
-import "@/app/styles/header.css";
-import { useEffect, useState } from "react";
+import "@/styles/header.css";
 
 const LogoCLN = ({ type }: { type: string }) => (
   <svg

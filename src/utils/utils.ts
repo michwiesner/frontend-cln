@@ -1,4 +1,4 @@
-import { IBranch } from "@/app/interfacesAndTypes/accounts";
+import { IBranch } from "@/interfacesAndTypes/accounts";
 
 export const reduceByDistance = (branches: IBranch[]) =>
   branches.reduce(

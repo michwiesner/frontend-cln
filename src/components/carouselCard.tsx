@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { IAccountCarousel } from "@/app/interfacesAndTypes/accounts";
-import { getLocation } from "../utils/utils";
+import { IAccountCarousel } from "@/interfacesAndTypes/accounts";
 import Link from "next/link";
 import locationIcon from "@/../public/icons/location.svg";
+import { getLocation } from "@/utils/utils";
 
 const urlNavigation = "https://club.lanacion.com.ar";
 
@@ -25,10 +25,7 @@ const CarouselCard = ({
       />
     </Link>
     <div className="d-flex flex-column carousel-card-content">
-      <Link
-        href={`${urlNavigation}/${crmid}`}
-        target="_blank"
-      >
+      <Link href={`${urlNavigation}/${crmid}`} target="_blank">
         <p className="f-s-16 pointer">{name}</p>
       </Link>
       {benefits && benefits?.length > 0 && (

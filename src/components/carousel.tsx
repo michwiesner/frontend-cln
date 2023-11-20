@@ -1,4 +1,4 @@
-import { IAccountCarousel } from "@/app/interfacesAndTypes/accounts";
+import { IAccountCarousel } from "@/interfacesAndTypes/accounts";
 import CarouselCard from "./carouselCard";
 import chevronRight from "@/../public/icons/chevron-right-black.svg";
 import chevronLeft from "@/../public/icons/chevron-left-black.svg";

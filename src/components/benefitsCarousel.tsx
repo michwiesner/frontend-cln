@@ -1,4 +1,4 @@
-import { getAccounts } from "../requests/accounts";
+import { getAccounts } from "@/requests/accounts";
 import Carousel from "./carousel";
 import GenericButton from "./genericButton";
 

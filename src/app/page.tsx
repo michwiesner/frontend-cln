@@ -1,7 +1,7 @@
-import Header from "@/app/components/header";
-import Hero from "@/app/components/hero";
-import TourismCarousel from "./components/tourismCarousel";
-import BenefitsCarousel from "./components/benefitsCarousel";
+import BenefitsCarousel from "@/components/benefitsCarousel";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import TourismCarousel from "@/components/tourismCarousel";
 
 export default function Home() {
   return (

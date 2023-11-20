@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import chevronRight from "@/../public/icons/chevron-right-white.svg";
 import chevronLeft from "@/../public/icons/chevron-left-white.svg";
-import "@/app/styles/hero.css";
+import "@/styles/hero.css";
 
 const banners = [
   "/banners/banner-1.webp",
